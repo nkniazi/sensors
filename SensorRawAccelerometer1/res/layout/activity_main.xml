@@ -1,43 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="${packageName}.${activityClass}" >
-
-    <TextView
-        android:id="@+id/x_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/x_value"
-        android:layout_centerHorizontal="true"  
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/y_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/y_value"
-        android:layout_alignBottom="@+id/y_value"
-        android:layout_toLeftOf="@+id/x_data"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/z_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/y_data"
-        android:layout_marginTop="24dp"
-        android:text="z value"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/z_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/y_data"
-        android:layout_toRightOf="@+id/y_data"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
 
     <TextView
         android:id="@+id/x_value"
@@ -45,17 +11,55 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="36dp"
-        android:text="x value"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:padding="5dp"
+        android:text="x"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/y_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/x_data"
-        android:text="y value"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-    
+        android:layout_below="@+id/x_value"
+        android:padding="5dp"
+        android:text="Y"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/z_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/y_value"
+        android:padding="5dp"
+        android:text="z"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/x_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/x_value"
+        android:padding="5dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/y_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/x_value_view"
+        android:layout_toRightOf="@+id/y_value"
+        android:padding="5dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/z_value_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/y_value_view"
+        android:layout_toRightOf="@+id/z_value"
+        android:padding="5dp"
+        android:textSize="24sp" />
+
 </RelativeLayout>
